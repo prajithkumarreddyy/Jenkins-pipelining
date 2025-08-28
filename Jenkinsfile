@@ -14,7 +14,7 @@ pipeline {
 
         stage('Set Up Python Virtual Environment') {
             steps {
-                bat 'C:\\Users\\praji\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -m venv venv'
+                bat 'C:\Users\praji\AppData\Local\Microsoft\WindowsApps\python.exe -m venv venv'
                 bat '.\\venv\\Scripts\\python.exe -m pip install --upgrade pip'
                 bat '.\\venv\\Scripts\\pip install -r requirements.txt'
             }
